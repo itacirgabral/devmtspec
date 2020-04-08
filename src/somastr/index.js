@@ -20,7 +20,8 @@ function somastr (a, b) {
     digito = Number(arrA[i]) + Number(arrB[i]);
 
     if (vaium) {
-      digito = digito + 1
+      digito = digito + 1;
+      vaium = false;
     }
 
     if (digito > 9) {
