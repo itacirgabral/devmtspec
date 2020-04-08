@@ -5,6 +5,7 @@ git clone https://github.com/itacirgabral/devmtspec
 cd devmtspec
 ```
 
+[![Run on Repl.it](https://repl.it/badge/github/itacirgabral/devmtspec)](https://repl.it/github/itacirgabral/devmtspec)
 Se você estiver no repl.it, comece daqui.
 
 Para instalar as dependências:

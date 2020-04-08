@@ -1,1 +1,2 @@
 run = "echo DevMT testes unitários"
+language = "nodejs"
