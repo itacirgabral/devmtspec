@@ -56,4 +56,13 @@ describe("# FUNÇÃO SOMA STRING", function () {
 
     assert.equal(resultado, gabarito);
   });
+  it("## DESBUG IEEE 754", function () {
+    var a = '100000000000000000000';
+    var b = '10000';
+    var gabarito = '100000000000000010000';
+
+    var resultado = soma(a, b)
+
+    assert.equal(resultado, gabarito);
+  });
 });
