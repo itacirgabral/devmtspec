@@ -8,5 +8,5 @@ npm install
 
 Para executar o primeiro teste:
 ```
-npm run test:somanumero
+npm run test:soma
 ```

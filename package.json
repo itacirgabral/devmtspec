@@ -1,10 +1,13 @@
 {
   "name": "devmtspec",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "mocha": "^7.1.1"
   },
   "scripts": {
-    "test:somanumero":"npx mocha somanumero/*.spec.js"
+    "test:soma": "npx mocha src/soma/*.spec.js",
+    "web": "node src/web/index.js"
   }
 }
