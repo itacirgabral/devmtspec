@@ -32,6 +32,10 @@ function somastr (a, b) {
     arrAB[i] = digito
   }
 
+  if (vaium) {
+    arrAB = ['1'].concat(arrAB)
+  }
+
   return arrAB.join('')
 }
 
