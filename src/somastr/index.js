@@ -1,9 +1,13 @@
 function somastr (a, b) {
   var arrA = a.split('');
   var arrB = b.split('');
+  var i;
   
   var arrAB = [];
-  arrAB[0] = Number(arrA[0]) + Number(arrB[0]);
+  for (i = 0; i < arrA.length; i++) {
+    arrAB[i] = Number(arrA[i]) + Number(arrB[i])
+  }
+
 
   return arrAB.join('')
 }

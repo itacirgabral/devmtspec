@@ -11,4 +11,13 @@ describe("# FUNÇÃO SOMA STRING", function () {
 
     assert.equal(resultado, gabarito);
   });
+  it("## SOMA N ALGARISMO", function () {
+    var a = '333';
+    var b = '444';
+    var gabarito = '777';
+
+    var resultado = soma(a, b)
+
+    assert.equal(resultado, gabarito);
+  });
 });
