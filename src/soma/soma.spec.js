@@ -11,8 +11,8 @@ describe("# DESCRIÇÃO DE UM BLOCO DE CASOS", function () {
     var b = 4;
     var gabarito = 7;
 
-    var soma = soma(a, b);
+    var resultado = soma(a, b);
 
-    assert.equal(soma, gabarito, "OPS MENSAGEM DE ERRO");
+    assert.equal(resultado, gabarito, "OPS MENSAGEM DE ERRO");
   });
 });
