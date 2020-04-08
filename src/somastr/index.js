@@ -1,7 +1,11 @@
 function somastr (a, b) {
-  var soma = Number(a) + Number(b);
+  var arrA = a.split('');
+  var arrB = b.split('');
+  
+  var arrAB = [];
+  arrAB[0] = Number(arrA[0]) + Number(arrB[0]);
 
-  return soma.toString()
+  return arrAB.join('')
 }
 
 module.exports = somastr;
