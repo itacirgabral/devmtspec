@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test:soma": "npx mocha src/soma/*.spec.js",
-    "web": "node src/web/index.js"
+    "web": "node src/web/index.js",
+    "test:somastr": "npx mocha src/somastr/*.spec.js"
   }
 }
