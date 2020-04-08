@@ -29,4 +29,13 @@ describe("# FUNÇÃO SOMA STRING", function () {
 
     assert.equal(resultado, gabarito);
   });
+  it("## SOMA VAI UM", function () {
+    var a = '37';
+    var b = '44';
+    var gabarito = '81';
+
+    var resultado = soma(a, b)
+
+    assert.equal(resultado, gabarito);
+  });
 });
