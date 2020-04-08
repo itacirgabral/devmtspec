@@ -38,4 +38,13 @@ describe("# FUNÇÃO SOMA STRING", function () {
 
     assert.equal(resultado, gabarito);
   });
+  it("## SOMA VAI UM NO ÚLTIMO", function () {
+    var a = '996';
+    var b = '4';
+    var gabarito = '1000';
+
+    var resultado = soma(a, b)
+
+    assert.equal(resultado, gabarito);
+  });
 });

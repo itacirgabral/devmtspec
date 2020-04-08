@@ -22,7 +22,7 @@ function somastr (a, b) {
     if (vaium) {
       digito = digito + 1
     }
-    
+
     if (digito > 9) {
       vaium = true;
       digito = digito - 10;
