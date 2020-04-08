@@ -20,4 +20,13 @@ describe("# FUNÇÃO SOMA STRING", function () {
 
     assert.equal(resultado, gabarito);
   });
+  it("## SOMA N ALGARISMO ASSIMETRICOS", function () {
+    var a = '3';
+    var b = '444';
+    var gabarito = '447';
+
+    var resultado = soma(a, b)
+
+    assert.equal(resultado, gabarito);
+  });
 });
