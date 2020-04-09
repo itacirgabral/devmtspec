@@ -6,15 +6,16 @@ function make_soma (base) {
   
     if (vaium) {
       abi = abi + 1;
+      vaium = false;
     }
 
     if (abi > base.length - 1) {
-      abi = abi - base.length
-      vaium = true
+      abi = abi - base.length;
+      vaium = true;
     }
 
     return {
-      valor: base[abi],
+      digito: base[abi],
       vaium
     }
   }

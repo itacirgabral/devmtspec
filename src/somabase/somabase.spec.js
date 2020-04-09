@@ -9,42 +9,52 @@ describe("# SOMA EM QUANQUER BASE", function () {
     var soma = make_soma(base10q)
     var a = "T";
     var b = "U";
-    var gabarito = "X";
+    var gabarito = {
+      digito: "X",
+      vaium: false
+    };
 
     var resultado = soma(a, b);
 
-    assert.equal(resultado.valor, gabarito);
+    assert.deepEqual(resultado, gabarito);
   });
   it("## BASE 10Q COM UM", function () {
     var soma = make_soma(base10q)
     var a = "T";
     var b = "U";
-    var gabarito = "Y";
+    var gabarito = {
+      digito: "Y",
+      vaium: false
+    };
 
     var resultado = soma(a, b, true);
 
-    assert.equal(resultado.valor, gabarito);
+    assert.deepEqual(resultado, gabarito);
   });
   it("## BASE 10Q VAI UM", function () {
     var soma = make_soma(base10q)
     var a = "X";
     var b = "X";
-    var gabarito = "U";
+    var gabarito = {
+      digito: "U",
+      vaium: true
+    };
 
     var resultado = soma(a, b);
 
-    assert.equal(resultado.valor, gabarito);
-    assert.equal(resultado.vaium, true);
+    assert.deepEqual(resultado, gabarito);
   });
   it("## BASE 10Q COM UM VAI UM", function () {
     var soma = make_soma(base10q)
     var a = "X";
     var b = "X";
-    var gabarito = "V";
+    var gabarito = {
+      digito: "V",
+      vaium: true
+    };
 
     var resultado = soma(a, b, true);
 
-    assert.equal(resultado.valor, gabarito);
-    assert.equal(resultado.vaium, true);
+    assert.deepEqual(resultado, gabarito);
   });
 });

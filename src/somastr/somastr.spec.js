@@ -1,5 +1,10 @@
 var assert = require("assert");
-var soma = require("../somastr");
+var make_soma = require("../somastr");
+var make_somadigito = require("../somabase")
+var base10n = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+var somadigito = make_somadigito(base10n)
+var soma = make_soma(somadigito);
 
 describe("# FUNÇÃO SOMA STRING", function () {
   it("## SOMA 1 ALGARISMO", function () {
