@@ -4,7 +4,7 @@ var make_somadigito = require("../somabase")
 
 describe("# FUNÇÃO SOMA STRING", function () {
   describe("## BASE DECIMAL", function () {
-    it("## SOMA 1 ALGARISMO", function () {
+    it("### SOMA 1 ALGARISMO", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -16,7 +16,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA N ALGARISMO", function () {
+    it("### SOMA N ALGARISMO", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -28,7 +28,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA N ALGARISMO ASSIMETRICOS", function () {
+    it("### SOMA N ALGARISMO ASSIMETRICOS", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -40,7 +40,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA VAI UM", function () {
+    it("### SOMA VAI UM", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -52,7 +52,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA VAI UM E VOLTA", function () {
+    it("### SOMA VAI UM E VOLTA", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -64,7 +64,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA VAI UM NO ULTIMO", function () {
+    it("### SOMA VAI UM NO ULTIMO", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -76,7 +76,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## DESBUG IEEE 754", function () {
+    it("### DESBUG IEEE 754", function () {
       var base = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -90,7 +90,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
     });
   });
   describe("## BASE VOCAL", function () {
-    it("## SOMA N ALGARISMO ASSIMETRICOS", function () {
+    it("### SOMA N ALGARISMO ASSIMETRICOS", function () {
       var base = ["a", "e", "i", "o", "u"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);
@@ -102,7 +102,7 @@ describe("# FUNÇÃO SOMA STRING", function () {
   
       assert.equal(resultado, gabarito);
     });
-    it("## SOMA VAI UM NO ULTIMO", function () {
+    it("### SOMA VAI UM NO ULTIMO", function () {
       var base = ["a", "e", "i", "o", "u"];
       var somadigito = make_somadigito(base);
       var soma = make_soma(somadigito);

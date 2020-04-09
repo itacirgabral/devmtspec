@@ -10,6 +10,7 @@
     "test:soma": "npx mocha src/soma/*.spec.js",
     "web": "node src/web/index.js",
     "test:somastr": "npx mocha src/somastr/*.spec.js",
-    "test:somabase": "npx mocha src/somabase/*.spec.js"
+    "test:somabase": "npx mocha src/somabase/*.spec.js",
+    "test": "npx mocha src/**/*.spec.js"
   }
 }
