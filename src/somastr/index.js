@@ -11,40 +11,31 @@ function make_somastr (somadigito) {
       ba = b.length - a.length;
     }
   
-    var arrA = Array(ba).fill('0').concat(a.split(''));
-    var arrB = Array(ab).fill('0').concat(b.split(''));
+    var zero = somadigito()
+    var arrA = Array(ba).fill(zero).concat(a.split(''));
+    var arrB = Array(ab).fill(zero).concat(b.split(''));
     var i;
     
     var arrAB = [];
     var vaium = false;
     var digito;
     var retornoSomaDigito;
+
     for (i = arrA.length - 1; i > -1; i--) {
-      /*
-      digito = Number(arrA[i]) + Number(arrB[i]);
-  
-      if (vaium) {
-        digito = digito + 1;
-        vaium = false;
-      }
-  
-      if (digito > 9) {
-        vaium = true;
-        digito = digito - 10;
-      }
-      */
-      retornoSomaDigito = somadigito(arrA[i], arrB[i], vaium)
-      digito = retornoSomaDigito.digito
-      vaium = retornoSomaDigito.vaium
+
+      retornoSomaDigito = somadigito(arrA[i], arrB[i], vaium);
+      digito = retornoSomaDigito.digito;
+      vaium = retornoSomaDigito.vaium;
       
-      arrAB[i] = digito
+      arrAB[i] = digito;
     }
   
     if (vaium) {
-      arrAB = ['1'].concat(arrAB)
+      var um = somadigito(undefined, undefined, true).digito;
+      arrAB = [um].concat(arrAB);
     }
   
-    return arrAB.join('')
+    return arrAB.join('');
   }
 }
 
