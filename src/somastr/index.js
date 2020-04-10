@@ -3,7 +3,7 @@ function somastr (a, b) {
   var arrB = b.split('');
   
   var arrAB = [];
-  arrAB[0] = Number(arrA[0]) + Number(arrB[0]);
+  arrAB[0] = Number(arrA[0]) + Number(arrB[0]);z
 
   return arrAB.join('')
 }

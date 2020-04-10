@@ -7,7 +7,6 @@ var app = express();
 
 var homepage = fs.readFileSync(path.join(__dirname, 'homepage.html'), 'utf8');
 var resultadoTemplate = fs.readFileSync(path.join(__dirname, './resultadoTemplate.html'), 'utf8');
-var olamundo = 'Hello World!'
 
 app.get('/', function (req, res) {
   res.setHeader('Content-Type', 'text/html');
